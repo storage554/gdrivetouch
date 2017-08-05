@@ -92,13 +92,19 @@ forth. One can also set some alert in case of execution failure.
 
 ## Known limitations
 
+* The "Last update" timestamp can only be change to the current
+date/time of server running the script, a limitation of the "touch"
+function from the Drive API.
+
 * If you are using
 [Google Drive Sync](https://www.google.com/drive/download/), this
 approach will not modify the timestamps on your local hardrive
 (not sure why).
 
-* The "Last update" timestamp can only be change to the current
-date/time of server running the script.
+* If you have lots of files in your Google Drive account, you may exceed
+the
+[quotas](https://developers.google.com/apps-script/guides/services/quotas)
+allowed.
 
 ## Future Development
 
