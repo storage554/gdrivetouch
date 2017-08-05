@@ -38,8 +38,36 @@ represented here by the xxxxxxxxxxxxxx.
 ### Enabling Google Script
 
 If [Google Apps Script](https://www.google.com/script/start/), you can
-enable it by following the procedure in the image below. Select "New" >>
-"More" >> "Connect More Apps". Search for "Google script" and select
+enable it by following the procedure in the image below. Select "New" >
+"More" > "Connect More Apps". Search for "Google script" and select
 "Connect" when the apps is retrieved.
 
 ![Enable Google Script Image](/imgs/img_01.png)
+
+### Creating a new Script Project
+
+To open a new script project, select "New" > "More" >
+"Google Apps Script". A new window will open. This is your Google App
+Script environment. You can change the Project title and start copying
+the scripts.
+
+![Create New Google Apps Script Project](/imgs/img_02.png)
+
+Once the scripts have been imported, the project window will look like
+the below.
+
+![What the gDriveTouch Google Apps Project may look like](/imgs/img_03.png)
+
+### Enabling Drive API
+
+The
+[touch](https://developers.google.com/drive/v2/reference/files/touch)
+command used to modify the "Last updated" property is part of an API
+called [Drive API](https://developers.google.com/drive/). To enable it,
+Go to "Resources" > "Advanced Google Services", scroll down the list of
+service and enable "Drive API" by turning the toglle to "on".
+
+![Enable Drive API](/imgs/img_04.png)
+
+### Running the gDriveTouch
+
