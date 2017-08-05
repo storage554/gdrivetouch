@@ -90,7 +90,7 @@ forth. One can also set some alert in case of execution failure.
 
 ![Setting up triggers](/imgs/img_06.png)
 
-## Known limitation
+## Known limitations
 
 * If you are using
 [Google Drive Sync](https://www.google.com/drive/download/), this
