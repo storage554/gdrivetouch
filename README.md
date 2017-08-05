@@ -79,8 +79,8 @@ appear).
 
 ![Run Google Apps Script](/imgs/img_05.png)
 
-You can see the log of the files that were modified, by selecting "View"
- > "Logs" from the menu
+You can see the log of the files that were modified, by selecting "View" >
+"Logs" from the menu
 
 ### Automatically run the script with "Triggers"
 
