@@ -10,7 +10,8 @@ This repository provides 2
 the "Last modified" date of the file that are older than 950 days (the
 threshold can easily be modified).
 
-Use at your own risk and please read the section about known lmitations.
+Use at your own risk and please read the section about known
+limitations.
 
 ## gDriveTouch
 
@@ -40,7 +41,7 @@ represented here by the xxxxxxxxxxxxxx.
 If [Google Apps Script](https://www.google.com/script/start/), you can
 enable it by following the procedure in the image below. Select "New" >
 "More" > "Connect More Apps". Search for "Google script" and select
-"Connect" when the apps is retrieved.
+"Connect" when the application is retrieved.
 
 ![Enable Google Script Image](/imgs/img_01.png)
 
@@ -65,9 +66,47 @@ The
 command used to modify the "Last updated" property is part of an API
 called [Drive API](https://developers.google.com/drive/). To enable it,
 Go to "Resources" > "Advanced Google Services", scroll down the list of
-service and enable "Drive API" by turning the toglle to "on".
+service and enable "Drive API" by turning the toggle to "on".
 
 ![Enable Drive API](/imgs/img_04.png)
 
 ### Running the gDriveTouch
+
+You can run the script by pressing the play button or selecting "Run" >
+"gDriveTouch". The first time you run a function, you have to authorize
+it to access your files (the dialogue on the right-end side below will
+appear).
+
+![Run Google Apps Script](/imgs/img_05.png)
+
+You can see the log of the files that were modified, by selecting "View"
+> "Logs" from the menu
+
+### Automatically run the script with "Triggers"
+
+You can run scripts automatically by setting up triggers (see image
+below). By default, triggers can be set hourly, weekly, monthly and so
+forth. One can also set some alert in case of execution failure.
+
+![Setting up triggers](/imgs/img_06.png)
+
+## Known limitation
+
+* If you are using
+[Google Drive Sync](https://www.google.com/drive/download/), this
+approach will not modify the timestamps on your local hardrive
+(not sure why).
+
+* The "Last update" timestamp can only be change to the current
+date/time of server running the script.
+
+## Future Development
+
+There seem to be a new version of
+[Drive API](https://developers.google.com/drive/v3/web/about-sdk) (v3)
+that will be available. The "touch" function will be deprecated and
+replaced by the
+["update"](https://developers.google.com/drive/v3/reference/files/update)
+with the advantage that the new timestamp will be customizable.
+
 
