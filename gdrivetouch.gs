@@ -1,5 +1,6 @@
 function gDriveTouch() {
 	//Logger.clear();
+	var label = 'gDriveTouch_All() time'; // Labels the timing log entry.
 	console.time(label); // Starts the timer.
 	var todayDate = new Date();
 	var todayTime = todayDate.getTime();
